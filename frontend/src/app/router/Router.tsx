@@ -6,7 +6,6 @@ import {
 
 import RootLayout from "./layouts/RootLayout";
 import { Home, PageNotFound } from "./pages";
-import Login from "./pages/Login";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +13,6 @@ export const router = createBrowserRouter(
       <Route path="/" element={<RootLayout />}>
         {/* nested routes */}
         <Route path="" element={<Home />} />
-        <Route path="login" element={<Login />} />
         {/* Other Routes to be configured here */}
       </Route>
       <Route path="*" element={<PageNotFound />} />
